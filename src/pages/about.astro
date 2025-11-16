@@ -1,0 +1,114 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+<Layout title="Sobre mí - Christian Martos">
+  <div
+    class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+  >
+    <!-- TopNavBar -->
+    <Header />
+    <main class="flex h-full w-full flex-1 flex-col items-center">
+      <div
+        class="flex w-full max-w-4xl flex-col items-center gap-12 px-6 py-16 sm:py-24 md:gap-16"
+      >
+        <!-- PageHeading -->
+        <div class="flex flex-col items-center gap-4 text-center">
+          <h1
+            class="text-4xl font-bold leading-tight tracking-tighter text-text-light dark:text-text-dark sm:text-5xl md:text-6xl"
+          >
+            Hola, soy Christian Martos.
+          </h1>
+          <p
+            class="max-w-2xl text-lg font-normal leading-normal text-secondary-text-light dark:text-secondary-text-dark"
+          >
+            Uniendo estrategia, creatividad y tecnología para dar vida a ideas
+            extraordinarias.
+          </p>
+        </div>
+        <!-- Hero Image -->
+        <div class="w-full overflow-hidden rounded-xl">
+          <div
+            class="aspect-[4/3] w-full bg-cover bg-center bg-no-repeat"
+            data-alt="Fotografía de retrato profesional de Christian Martos, con un estilo natural y cercano."
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjcCkl2pFE2j7k58Xksd3CkdkmKVdPu7yl4-Rjv213yBob6HXLDQWpkLYYZutj-GQJJxxkkZNx8pD-Ru3tG6nwaH78OYBFDxXPg4gmqrdQKTj4BcWcf5otl6RqxRtvTf1vE5TPxZHHW9vwx1N9-6x8sPME5gbNsmb7OwaaKtSpjnXahmalJWmwX9qQTyznwW_OMhCB2XtVYha8CSB_Vjq81-wpK4TOQTWDcI-80PHtsYz7cZmlgNKX_FMoaO9pFwM4x20o47Nf_Q')"
+          >
+          </div>
+        </div>
+        <!-- BodyText -->
+        <div class="flex w-full max-w-2xl flex-col gap-8">
+          <p
+            class="text-base font-normal leading-relaxed text-text-light dark:text-text-dark md:text-lg"
+          >
+            Desde mis inicios, mi carrera ha estado impulsada por la pasión de
+            combinar estrategia y creatividad. He dedicado años a dominar el
+            marketing digital y la creación de contenido, ayudando a marcas a
+            conectar con su audiencia de manera auténtica y efectiva. Mi enfoque
+            siempre ha sido contar historias que no solo capturan la atención,
+            sino que también generan resultados tangibles.
+          </p>
+          <!-- SectionHeader -->
+          <h2
+            class="pt-4 text-2xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark md:text-3xl"
+          >
+            Mi trayectoria
+          </h2>
+          <p
+            class="text-base font-normal leading-relaxed text-text-light dark:text-text-dark md:text-lg"
+          >
+            Mi recorrido profesional me ha llevado a explorar las fronteras del
+            marketing digital. He tenido el privilegio de colaborar con diversas
+            empresas, desde startups innovadoras hasta marcas consolidadas,
+            diseñando estrategias de contenido que resuenan y construyen
+            comunidades leales. Cada proyecto ha sido una oportunidad para
+            aprender y refinar mi habilidad para comunicar mensajes de manera
+            clara y poderosa.
+          </p>
+          <!-- SectionHeader -->
+          <h2
+            class="pt-4 text-2xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark md:text-3xl"
+          >
+            Mi especialidad
+          </h2>
+          <p
+            class="text-base font-normal leading-relaxed text-text-light dark:text-text-dark md:text-lg"
+          >
+            Mi curiosidad me llevó a un nuevo campo fascinante: la visualización
+            arquitectónica 3D. Tras completar un máster, descubrí cómo esta
+            disciplina se integra perfectamente con el marketing, permitiéndome
+            crear experiencias visuales inmersivas que presentan proyectos y
+            productos de una forma completamente nueva. Ahora, combino mi
+            experiencia en marketing con el poder del 3D para construir
+            narrativas visuales que no solo informan, sino que también inspiran
+            y convencen.
+          </p>
+          <!-- CTA Section -->
+          <div class="flex flex-col items-start gap-6 pt-8 text-left">
+            <p class="text-lg font-medium text-text-light dark:text-text-dark">
+              ¿Tienes una idea en mente? Me encantaría ayudarte a hacerla
+              realidad.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark"
+                href="#"
+              >
+                Hablemos de tu proyecto
+              </a>
+              <a
+                class="group inline-flex items-center justify-center rounded-full bg-background-light px-5 py-2.5 text-sm font-medium text-primary ring-1 ring-inset ring-primary/50 transition-colors hover:bg-primary/10 dark:bg-background-dark dark:hover:bg-primary/10"
+                href="#"
+              >
+                <span>Ver mi trabajo</span>
+                <span
+                  class="material-symbols-outlined ml-1.5 text-base transition-transform group-hover:translate-x-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</Layout>

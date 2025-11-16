@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+<Layout title="Contacto - Christian Martos">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <!-- TopNavBar -->
+    <Header />
+    <!-- Main Content -->
+    <main class="flex flex-1 justify-center px-6 py-16 sm:py-24">
+      <div class="w-full max-w-5xl">
+        <!-- PageHeading -->
+        <div class="text-center mb-12">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter"
+          >
+            Hablemos.
+          </h1>
+          <p
+            class="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-text-secondary-light dark:text-text-secondary-dark"
+          >
+            Disponible para proyectos de marketing, contenido y visualización
+            3D.
+          </p>
+        </div>
+        <!-- Contact Form & Info -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+          <!-- Form -->
+          <form class="lg:col-span-3 space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- TextField: Nombre -->
+              <label class="flex flex-col">
+                <p
+                  class="text-sm font-medium pb-2 text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Nombre
+                </p>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-white dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 p-3 text-base font-normal transition-shadow"
+                  placeholder="Tu nombre"
+                  type="text"
+                />
+              </label>
+              <!-- TextField: Email -->
+              <label class="flex flex-col">
+                <p
+                  class="text-sm font-medium pb-2 text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Email
+                </p>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-white dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 p-3 text-base font-normal transition-shadow"
+                  placeholder="tu@email.com"
+                  type="email"
+                />
+              </label>
+            </div>
+            <!-- TextField: Asunto -->
+            <label class="flex flex-col">
+              <p
+                class="text-sm font-medium pb-2 text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                Asunto
+              </p>
+              <input
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-white dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 p-3 text-base font-normal transition-shadow"
+                placeholder="¿Sobre qué quieres hablar?"
+                type="text"
+              />
+            </label>
+            <!-- TextArea: Mensaje -->
+            <label class="flex flex-col">
+              <p
+                class="text-sm font-medium pb-2 text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                Tu Mensaje
+              </p>
+              <textarea
+                class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg bg-white dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 p-3 text-base font-normal transition-shadow min-h-[140px]"
+                placeholder="Cuéntame tu idea..."></textarea>
+            </label>
+            <!-- Submit Button -->
+            <button
+              class="w-full sm:w-auto rounded-lg bg-primary px-8 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark"
+              type="submit">Enviar Mensaje</button
+            >
+          </form>
+          <!-- Alternative Contact Info -->
+          <div class="lg:col-span-2">
+            <h3 class="text-lg font-bold mb-6">Otras formas de conectar</h3>
+            <div class="space-y-6">
+              <a
+                class="group flex items-center gap-4 p-4 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                href="mailto:hola@christianmartos.com"
+              >
+                <div
+                  class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary"
+                >
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div>
+                  <p class="font-semibold">Email</p>
+                  <p
+                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark group-hover:text-primary transition-colors"
+                  >
+                    hola@christianmartos.com
+                  </p>
+                </div>
+              </a>
+              <a
+                class="group flex items-.center gap-4 p-4 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                href="#"
+              >
+                <div
+                  class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.64 1.64 0 0013 14.19a1.54 1.54 0 00-1 1.54V19H9v-9h3v1.38A3.19 3.19 0 0115.28 10a3.36 3.36 0 013.72 3.72z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold">LinkedIn</p>
+                  <p
+                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark group-hover:text-primary transition-colors"
+                  >
+                    /in/christian-martos
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</Layout>
